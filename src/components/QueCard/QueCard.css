@@ -1,4 +1,21 @@
 /* index.css */
-.queCard {
-  transition: all 0.3s ease-in-out;
+@keyframes flyAcross {
+  0% {
+    left: -100px;
+    top: 30px;
+    transform: rotate(10deg);
+  }
+  50% {
+    top: 0px;
+    transform: rotate(0deg);
+  }
+  100% {
+    left: 100%;
+    top: 20px;
+    transform: rotate(-10deg);
+  }
+}
+
+.flying-plane {
+  animation: flyAcross 3s linear infinite;
 }
