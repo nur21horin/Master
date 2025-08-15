@@ -1,10 +1,11 @@
 import { NavLink } from "react-router";
 import "./App.css";
+import Menu from "./components/Menu/Menu";
 
 function App() {
   return (
-    <>
-      <div className="navbar bg-base-100 shadow-sm">
+    <div>
+      <div className="navbar bg-base-100 shadow-sm max-md:none">
         <div className="navbar-start">
           <div className="dropdown">
             <div
@@ -45,13 +46,18 @@ function App() {
                 <NavLink to={"/writing"}>Writing</NavLink>
               </li>
               <li>
-                <NavLink to={'/quecard'}>Que Card</NavLink>
+                <NavLink to={"/quecard"}>Que Card</NavLink>
+              </li>
+               <li>
+                <NavLink to={"/vocabulary"}>Vocabulary</NavLink>
               </li>
             </ul>
           </div>
         </div>
         <div className="navbar-center">
-          <NavLink className="btn btn-ghost text-xl" to={'/'}>Home</NavLink>
+          <NavLink className="btn btn-ghost text-xl" to={"/"}>
+            Home
+          </NavLink>
         </div>
         <div className="navbar-end">
           <button className="btn btn-ghost btn-circle">
@@ -93,7 +99,9 @@ function App() {
           </button>
         </div>
       </div>
-    </>
+
+      <Menu/>
+    </div>
   );
 }
 

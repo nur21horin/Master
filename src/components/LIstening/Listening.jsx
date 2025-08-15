@@ -2,8 +2,8 @@ import React from 'react'
 
 const Listening = () => {
   return (
-    <div>
-      <h1>LIstening</h1>
+    <div className='text-center'>
+      <h1>Listening</h1>
       <h1>HII</h1>
     </div>
   )
