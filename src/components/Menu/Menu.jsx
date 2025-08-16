@@ -7,7 +7,7 @@ const menuItems = [
   { title: "Speaking", image: "/Photo/speaking.webp", link: "/speaking" },
   { title: "Reading", image: "/Photo/reading.jpg", link: "/reading" },
   { title: "Writing", image: "/Photo/writing.jpeg", link: "/writing" },
-  { title: "Vocabulary", image: "/Photo/Vocabulary.jpg", link: "/vocabulary" }, // changed
+  { title: "Vocabulary", image: "/Photo/Vocabulary.jpg", link: "/vocabpage" }, // changed
 ];
 
 

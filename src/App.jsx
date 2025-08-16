@@ -49,7 +49,7 @@ function App() {
                 <NavLink to={"/quecard"}>Que Card</NavLink>
               </li>
                <li>
-                <NavLink to={"/vocabulary"}>Vocabulary</NavLink>
+                <NavLink to={"/vocabpage"}>Vocabulary</NavLink>
               </li>
             </ul>
           </div>

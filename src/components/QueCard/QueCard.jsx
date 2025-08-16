@@ -1,8 +1,7 @@
-
 import React, { useEffect, useState } from "react";
 import "./QueCard.css";
 import { FaPlane } from "react-icons/fa";
-
+import { NavLink } from "react-router-dom";
 const QueCard = () => {
   const [cards, setCards] = useState([]);
   const [clicks, setClicks] = useState({});
@@ -22,7 +21,7 @@ const QueCard = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-3 m-3.5 font-serif">
+    <div className="flex flex-col gap-3 m-3.5 font-serif justify-center items-center ">
       {cards.map((card) => {
         const count = clicks[card.id] || 0;
 
@@ -50,6 +49,13 @@ const QueCard = () => {
           </div>
         );
       })}
+      <NavLink
+        to="/"
+        className="text-2xl ease-in-out transform hover:scale-105 text-center hover:bg-blue-700 transition duration-300 w-[400px] font-serif bg-emerald-900 rounded-lg mt-4 h-auto py-4"
+      >
+        🔙 Back
+      </NavLink>
+      
     </div>
   );
 };

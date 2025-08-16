@@ -14,6 +14,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import VocabPage from "./components/Vocabulary/VocabPage.jsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
@@ -27,7 +28,9 @@ const router = createBrowserRouter([
     path: "/showvocab",
     element: <ShowVocabulary />,
     loader: () => fetch("http://localhost:5000/users"),
-  },
+  },{
+    path:"/vocabpage", element:<VocabPage/>
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(
