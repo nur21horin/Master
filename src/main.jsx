@@ -7,8 +7,8 @@ import Speaking from "./components/Speaking/Speaking.jsx";
 import Reading from "./components/Reading/Reading.jsx";
 import Listening from "./components/LIstening/Listening.jsx";
 import QueCard from "./components/QueCard/QueCard.jsx";
-import Vocabulary from "./components/Vocabulary/Vocabulary.jsx";
-import ShowVocabulary from "./components/Vocabulary/ShowVocabulary.jsx";
+import Vocabulary from "./components/Vocabulary/AddVocabullary/Vocabulary.jsx";
+import ShowVocabulary from "./components/Vocabulary/ShowVocabulary/ShowVocabulary.jsx";
 
 import {
   createBrowserRouter,
